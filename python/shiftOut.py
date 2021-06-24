@@ -20,3 +20,6 @@ def shiftout(byte):
 for x in range(255):
   shiftout(x)
   time.sleep(0.001)
+
+
+GPIO.cleanup()
