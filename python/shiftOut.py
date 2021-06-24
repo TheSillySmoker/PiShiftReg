@@ -15,12 +15,10 @@ def shiftout(byte):
     GPIO.output(PIN_CLOCK, 1)
     GPIO.output(PIN_CLOCK, 0)
   GPIO.output(PIN_LATCH, 1)
-  time.sleep(1)
 
 
-for x in range(255):
-  shiftout(x)
-  time.sleep(0.001)
+
+
 
   
 
