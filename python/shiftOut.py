@@ -1,9 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BCM)
-PIN_DATA  = 22
-PIN_LATCH = 27
-PIN_CLOCK = 17
+PIN_DATA  = 25
+PIN_LATCH = 21
+PIN_CLOCK = 20
 GPIO.setup(PIN_DATA,  GPIO.OUT)
 GPIO.setup(PIN_LATCH, GPIO.OUT)
 GPIO.setup(PIN_CLOCK, GPIO.OUT)
@@ -21,7 +21,7 @@ def shiftout(byte):
 for x in range(255):
   shiftout(x)
   time.sleep(0.001)
-  
+
   
 
 
